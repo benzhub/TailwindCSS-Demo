@@ -54,6 +54,8 @@ module.exports = {
     },
     compress: true,
     port: 8080,
+    hot: false,
+    liveReload: true,
   },
   // 插件外掛
   plugins: [
