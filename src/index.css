@@ -1,3 +1,22 @@
+:root {
+  --bruce-primary: #fff;
+  --bruce-title: 14px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 擴展: body的預設值 */
+@layer base {
+  body {
+    @apply m-5 bg-gray-400;
+  }
+}
+
+/* 擴展: 自定義的style組件(在class中使用) */
+@layer components {
+  .card {
+    @apply w-full px-4 py-3 flex box-border rounded-lg bg-gray-800 sm:bg-red-400 md:bg-yellow-400 xx:bg-green-400;
+  }
+}

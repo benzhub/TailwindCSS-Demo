@@ -1,3 +1,13 @@
-import "./index.css"
+import './index.css'
 
-console.log("Hello TailwindCSS")
+
+const btnLight = document.getElementById('light')
+const btnDark = document.getElementById('dark')
+
+btnLight.addEventListener('click', function () {
+  document.documentElement.classList.remove('dark')
+})
+
+btnDark.addEventListener('click', function () {
+  document.documentElement.classList.add('dark')
+})
