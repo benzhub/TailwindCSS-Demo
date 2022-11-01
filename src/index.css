@@ -10,7 +10,8 @@
 /* 擴展: body的預設值 */
 @layer base {
   body {
-    @apply m-5 bg-gray-400;
+    /* @apply m-5 bg-gray-400; */
+    @apply m-5 bg-gray-400 dark:bg-black;
   }
 }
 
