@@ -2,6 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
+// 使用gz 在壓縮編譯後的檔案
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   // 編譯模式
@@ -57,5 +59,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'index.[hash].css',
     }),
+    new CompressionPlugin(),
   ],
 }
