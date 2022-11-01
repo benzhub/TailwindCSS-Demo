@@ -1,6 +1,6 @@
 :root {
-  --bruce-primary: #fff;
-  --bruce-title: 14px;
+  --ben-primary: red;
+  --ben-title: 56px;
 }
 
 @tailwind base;
